@@ -22,7 +22,9 @@ import javafx.stage.Stage;
 public class FXMain extends Application {
      @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("view/LoginView.fxml"));        
+
+       // Parent root = FXMLLoader.load(getClass().getResource("view/LoginView.fxml")); 
+        Parent root = FXMLLoader.load(getClass().getResource("view/DetailsView.fxml"));        
         Scene scene = new Scene(root);        
         stage.setTitle("RLSoft Login");
         stage.setScene(scene);
