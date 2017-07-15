@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-jul-2017, 15:30:52
+    Author     : PC
+*/
+
+/*color de fondo*/
+.background_app{
+    -fx-background-color: #f4f4f4;
+}
+
+/* cajas de texto */
+.text_app{
+    -fx-background-color: #FFE7BA;
+    -fx-text-fill: #000;
+    -fx-prompt-text-fill: #5aaff0;
+    -fx-text-box-border: transparent;        
+    -fx-background-radius: 0;
+    -fx-padding: 8;
+    -fx-font-size:14px;
+}
+
+.text_app:focused {
+    -fx-text-fill: #000;
+    -fx-background-color: #fff;     
+}
+
+/*boton de inicio de sesion*/
+.button_app{
+    -fx-background-color: #FFB90F;
+    -fx-border-radius: 46;
+    -fx-background-radius: 46;
+    -fx-text-fill: #222222;    
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+/**etiqueta de inicio de sesion*/
+.textb_app{
+    -fx-text-fill:#000000;
+    -fx-font-size:18px;
+   
+    -fx-font-weight: bold;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.9) , 6, 0.0 , 0 , 2 );
+    /* -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 0,0,0,1 );
+     -fx-fill: #000000;*/
+}
+
+/**etiqueta ¿no puede...*/
+.textnp_app{
+    -fx-text-fill: #222222;
+    -fx-font-size:14px;
+    -fx-font-weight: normal;    
+}
+
+
+/*etiqueta de error*/
+.texterr_app{
+    -fx-text-fill: #a53b3f;
+    -fx-font-size:12px;
+    -fx-font-style:italic;    
+}
+

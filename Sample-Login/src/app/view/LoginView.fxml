@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background_app" stylesheets="@../resources/myStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.LoginController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="75.0" fitWidth="156.0" layoutX="213.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/logoMotor.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="170.0" layoutY="169.0" prefHeight="40.0" prefWidth="250.0" styleClass="text_app" />
+      <Label layoutX="101.0" layoutY="159.0" prefHeight="25.0" prefWidth="119.0" />
+      <PasswordField layoutX="170.0" layoutY="218.0" prefHeight="40.0" prefWidth="250.0" styleClass="text_app" />
+      <Label layoutX="231.0" layoutY="132.0" prefHeight="27.0" prefWidth="128.0" styleClass="textb_app" text="Iniciar Sesión ">
+         <font>
+            <Font name="System Bold" size="1.0" />
+         </font>
+      </Label>
+      <Button layoutX="243.0" layoutY="285.0" mnemonicParsing="false" styleClass="button_app" text="Iniciar sesión" />
+      <Label layoutX="221.0" layoutY="329.0" styleClass="texterr_app" text="Los datos son incorrectos" />
+      <Label layoutX="386.0" layoutY="366.0" styleClass="textnp_app" text="¿No puede acceder a su cuenta?" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
