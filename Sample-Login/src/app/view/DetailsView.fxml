@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -9,16 +10,19 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../resources/myStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.DetailsController">
    <children>
-      <Label layoutX="14.0" layoutY="20.0" prefHeight="37.0" prefWidth="242.0" styleClass="textHeader" text="Bienvenido a RLSoft">
+      <Label layoutX="50.0" layoutY="30.0" prefHeight="37.0" prefWidth="242.0" styleClass="textHeader" text="Bienvenido a RLSoft">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="System Bold Italic" size="24.0" />
          </font>
+         <effect>
+            <Reflection />
+         </effect>
       </Label>
-      <Label layoutX="390.0" layoutY="20.0" prefHeight="37.0" prefWidth="196.0" styleClass="text_app">
+      <Label id="txtNameUser" layoutX="379.0" layoutY="30.0" prefHeight="37.0" prefWidth="196.0" styleClass="text_app">
          <font>
             <Font size="10.0" />
          </font>
       </Label>
-      <Button layoutX="477.0" layoutY="334.0" mnemonicParsing="false" styleClass="button_app" stylesheets="@../resources/myStyle.css" text="Volver" />
+      <Button id="txtReturn" layoutX="477.0" layoutY="334.0" mnemonicParsing="false" styleClass="button_app" stylesheets="@../resources/myStyle.css" text="Volver" />
    </children>
 </AnchorPane>
