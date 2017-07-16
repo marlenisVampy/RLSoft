@@ -12,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background_app" stylesheets="@../resources/myStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.LoginController">
    <children>
-      <ImageView id="txtUser" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="txtUser" fitHeight="400.0" fitWidth="600.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
          <effect>
             <BoxBlur />
          </effect></ImageView>
@@ -21,9 +21,9 @@
             <Image url="@../resources/images/logoMotor.png" />
          </image>
       </ImageView>
-      <TextField layoutX="170.0" layoutY="169.0" prefHeight="40.0" prefWidth="250.0" promptText="Nombre de usuario" styleClass="text_app" />
+      <TextField fx:id="txtUser" layoutX="170.0" layoutY="169.0" prefHeight="40.0" prefWidth="250.0" promptText="Nombre de usuario" styleClass="text_app" />
       <Label layoutX="101.0" layoutY="159.0" prefHeight="25.0" prefWidth="119.0" />
-      <PasswordField id="txtPass" layoutX="170.0" layoutY="218.0" prefHeight="40.0" prefWidth="250.0" promptText="Contraseña" styleClass="text_app" />
+      <PasswordField id="txtPass" fx:id="textPass" layoutX="170.0" layoutY="218.0" prefHeight="40.0" prefWidth="250.0" promptText="Contraseña" styleClass="text_app" />
       <Label layoutX="231.0" layoutY="132.0" prefHeight="27.0" prefWidth="128.0" styleClass="textb_app" text="Iniciar Sesión ">
          <font>
             <Font name="System Bold" size="1.0" />
@@ -32,8 +32,8 @@
             <Blend />
          </effect>
       </Label>
-      <Button id="btnOK" layoutX="243.0" layoutY="285.0" mnemonicParsing="false" onAction="#verifyUserData" styleClass="button_app" text="Iniciar sesión" />
-      <Label id="txtMsgError" layoutX="221.0" layoutY="329.0" styleClass="texterr_app" text="Los datos son incorrectos" />
+      <Button id="btnOK" fx:id="btnOK" layoutX="243.0" layoutY="285.0" mnemonicParsing="false" onAction="#verifyUserData" styleClass="button_app" text="Iniciar sesión" />
+      <Label id="txtMsgError" fx:id="txtMsgError" layoutX="221.0" layoutY="329.0" styleClass="texterr_app" text="Los datos son incorrectos" />
       <Label layoutX="386.0" layoutY="366.0" styleClass="textnp_app" text="¿No puede acceder a su cuenta?" />
    </children>
    <opaqueInsets>

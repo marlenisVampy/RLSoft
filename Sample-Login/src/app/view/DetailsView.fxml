@@ -18,11 +18,11 @@
             <Reflection />
          </effect>
       </Label>
-      <Label id="txtNameUser" layoutX="379.0" layoutY="30.0" prefHeight="37.0" prefWidth="196.0" styleClass="text_app">
+      <Label id="txtNameUser" fx:id="txtNameUser" layoutX="379.0" layoutY="30.0" prefHeight="37.0" prefWidth="196.0" styleClass="text_app">
          <font>
             <Font size="10.0" />
          </font>
       </Label>
-      <Button id="txtReturn" layoutX="477.0" layoutY="334.0" mnemonicParsing="false" styleClass="button_app" stylesheets="@../resources/myStyle.css" text="Volver" />
+      <Button id="txtReturn" fx:id="txtReturn" layoutX="477.0" layoutY="334.0" mnemonicParsing="false" styleClass="button_app" stylesheets="@../resources/myStyle.css" text="Volver" />
    </children>
 </AnchorPane>

@@ -5,19 +5,14 @@
  */
 package app;
 
-import app.view.LoginController;
+import app.view.*;
 import java.io.InputStream;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.fxml.JavaFXBuilderFactory;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
@@ -25,18 +20,6 @@ import javafx.stage.Stage;
  * @author PC
  */
 public class FXMain extends Application {
-   /*  @Override
-    public void start(Stage stage) throws Exception {
-
-       Parent root = FXMLLoader.load(getClass().getResource("view/LoginView.fxml")); 
-        // Parent root = FXMLLoader.load(getClass().getResource("view/DetailsView.fxml"));        
-        Scene scene = new Scene(root);        
-        stage.setTitle("RLSoft Login");
-        stage.setScene(scene);
-        stage.show();
-    }
-    
-  */
     
     private Stage stage;    
     
@@ -44,12 +27,13 @@ public class FXMain extends Application {
     public void start(Stage stage) throws Exception {
          try {
             this.stage = stage;
-            stage.setTitle("RLSoft Login");                     
-            LoginController login = (LoginController) replaceSceneContent("login/LoginView.fxml");
+            stage.setTitle("RLSoft");                     
+            LoginController login = (LoginController) replaceSceneContent("view/LoginView.fxml");
             login.setStage(stage);            
             stage.show();
         } catch (Exception ex) {
-            System.err.println(ex.getMessage());
+        System.out.println(ex.getMessage());
+//System.err.println(ex.getMessage());
         }     
     }
 
